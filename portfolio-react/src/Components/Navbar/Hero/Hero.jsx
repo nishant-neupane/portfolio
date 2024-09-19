@@ -1,0 +1,22 @@
+import React from "react";
+import "../Hero/Hero.css";
+import profile_img from "../../../assets/profile.png";
+const Hero = () => {
+  return (
+    <div className="hero">
+      <img src={profile_img} alt="" />
+      <h1><span>I'm Nishant Neupane,</span>  MERN Developer</h1>
+      <p>
+        I am IT student passionate about problem-solving and innovation.
+        Proficient in JavaScript (MERN), with hands-on experience developing
+        management systems that enhance efficiency and user satisfaction.
+      </p>
+      <div className="hero-action">
+        <div className="hero-connect">Connect with me</div>
+        <div className="hero-resume">My Resume</div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
