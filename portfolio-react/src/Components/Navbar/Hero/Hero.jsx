@@ -5,7 +5,9 @@ const Hero = () => {
   return (
     <div className="hero">
       <img src={profile_img} alt="" />
-      <h1><span>I'm Nishant Neupane,</span>  MERN Developer</h1>
+      <h1>
+        <span>I'm Nishant Neupane,</span>MERN Developer
+      </h1>
       <p>
         I am IT student passionate about problem-solving and innovation.
         Proficient in JavaScript (MERN), with hands-on experience developing
