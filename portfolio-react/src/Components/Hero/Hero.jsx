@@ -4,6 +4,15 @@ import profile_img from "../../assets/profile.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const fileUrl =
+      "https://drive.google.com/file/d/1pO6-cPlQtxCoMAoA1_gGHlBu3V4umXjt/view?usp=drive_link";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "resume.pdf";
+    link.click();
+  };
+
   return (
     <div id="home" className="hero">
       <img src={profile_img} alt="" />
@@ -18,10 +27,12 @@ const Hero = () => {
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            Connect with me{" "}
+            Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume" onClick={handleDownload}>
+          My Resume
+        </div>
       </div>
     </div>
   );
