@@ -1,5 +1,4 @@
 import React from "react";
-import "./Services.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import Services_Data from "../../assets/services_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
@@ -7,6 +6,110 @@ import arrow_icon from "../../assets/arrow_icon.svg";
 const Services = () => {
   return (
     <div id="services" className="services">
+      <style>{`.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 6dvh 170px;
+}
+.services-title {
+  position: relative;
+}
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 69px;
+  font-weight: 500;
+}
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.services-format h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.services-format h2 {
+  font-size: 35px;
+  font-weight: 700;
+  background: linear-gradient(264deg, #df8908 -5%, #b415ff 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-format p {
+  color: #d4d4d4;
+  font-size: 22px;
+  line-height: 40px;
+  max-width: 300px;
+}
+.services-readmore {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.services-format:hover {
+  border: 2px solid #ff00ff;
+  background: linear-gradient(45deg, #744a0a, #7c2ea0);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+  .services {
+    align-items: start;
+    gap: 20px;
+    margin: 20px 70px;
+  }
+  .services-title h1 {
+    padding: 0;
+    font-size: 50px;
+  }
+  .services-title img {
+    width: 130px;
+    margin-right: -20px;
+  }
+  .services-format {
+    gap: 20px;
+    padding: 32px;
+  }
+  .services-format h2 {
+    font-size: 28px;
+  }
+  .services-format p {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 300px;
+  }
+  .services-readmore img {
+    width: 20px;
+  }
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+`}</style>
       <div className="services-title">
         <h1>My Services</h1>
         <img src={theme_pattern} alt="" />

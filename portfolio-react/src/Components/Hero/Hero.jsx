@@ -1,5 +1,5 @@
 import React from "react";
-import "../Hero/Hero.css";
+
 import profile_img from "../../assets/profile.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -15,6 +15,97 @@ const Hero = () => {
 
   return (
     <div id="home" className="hero">
+      <style>
+        {`.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.hero img {
+  margin-top: 25px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 60px;
+  font-weight: 600;
+}
+.hero h1 span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 40px;
+}
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.hero-connect {
+  padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  cursor: pointer;
+}
+.hero-resume {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+}
+.hero-resume:hover {
+  border-color: #b415ff;
+}
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 120px;
+    width: 260px;
+  }
+  .hero h1 {
+    margin-top: 50px;
+    width: 90%;
+    font-size: 50px;
+  }
+  .hero p {
+    width: 60%;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0ox;
+  }
+  .hero-action {
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  .hero-connect {
+    padding: 20px 30px;
+    border-radius: 40px;
+  }
+  .hero-resume {
+    padding: 20px 50px;
+    border-radius: 40px;
+  }
+}
+`}
+      </style>
       <img src={profile_img} alt="" />
       <h1>
         <span>I'm Nishant Neupane,</span>MERN Developer
