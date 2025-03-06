@@ -22,6 +22,27 @@ const Hero = () => {
   flex-direction: column;
   gap: 35px;
 }
+ .line-1 {
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+.anim-typewriter {
+  animation: typewriter 3s steps(30) 1s 1 normal both;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .hero img {
   margin-top: 25px;
   height: 300px;
@@ -30,7 +51,7 @@ const Hero = () => {
 }
 .hero h1 {
   text-align: center;
-  width: 70%;
+  
   font-size: 60px;
   font-weight: 600;
 }
@@ -107,8 +128,9 @@ const Hero = () => {
 `}
       </style>
       <img src={profile_img} alt="" />
-      <h1>
-        <span>I'm Nishant Neupane,</span>MERN Developer
+      <h1 className="">
+        <span>I'm Nishant Neupane,</span>{" "}
+        <span className="anim-typewriter line-1">MERN Stack Developer</span>
       </h1>
       <p>
         I am IT student passionate about problem-solving and innovation.
